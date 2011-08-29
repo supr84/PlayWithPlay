@@ -1,4 +1,4 @@
 *lib*
-*classpath
-*project
+.classpath
+.project
 *eclipse*
