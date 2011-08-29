@@ -1,0 +1,30 @@
+#{extends 'main.html' /}
+#{set title:'Sign in' /}
+
+<div id="home">
+
+    <h2>Welcome to MySalesForce.com</h2>
+
+    <div id="signin">
+        #{form @signIn()}
+            #{if flash.error}
+                <p class="error">
+                    ${flash.error}
+                </p>
+            #{/if}
+            <p>
+                <label for="nick">userName</label>
+                <input type="text" name="userName" id="userName">
+            </p>
+            <p>
+                <label for="nick">password</label>
+                <input type="text" name="password" id="pwd">
+            </p>
+            <p>
+                <label></label>
+                <input type="submit" id="enter" value="Login">
+            </p>
+        #{/form}
+    </div>
+
+</div>
