@@ -28,6 +28,6 @@ public class MongoConfig {
 		if(null == mongoTemplate){
 			mongoTemplate = new MongoTemplate(mongo(), dbName);
 		}
-		return mongoTemplate();
+		return mongoTemplate;
 	}
 }

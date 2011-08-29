@@ -24,6 +24,19 @@ public class User {
 	
 	@Embedded
 	private Role role;
+	
+	private boolean isSuperAdmin = false;
+	
+	public boolean isSuperAdmin() {
+		return isSuperAdmin;
+	}
+	public void setSuperAdmin(boolean isSuperAdmin) {
+		this.isSuperAdmin = isSuperAdmin;
+	}
+	public User(String userName, String password) {
+		this.userName = userName;
+		this.password = password;
+	}
 	public String getFirstName() {
 		return firstName;
 	}
