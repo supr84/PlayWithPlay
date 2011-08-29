@@ -1,0 +1,4 @@
+
+<bean id="propertyConfigurer"
+class="com.globaldawn.common.spring.config.TestPlatformPropertyPlaceholderConfigurer"
+p:propertiesFile="salesforce.properties" />

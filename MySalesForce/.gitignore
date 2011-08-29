@@ -1,6 +1,6 @@
 .classpath
+*eclipse*
 .project
 *lib*
-*eclipse*
 *bin*
 *tmp*

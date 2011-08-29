@@ -14,9 +14,9 @@ import com.mongodb.MongoException;
 public class MongoConfig {
 	private static Mongo mongo;
 	private static MongoTemplate mongoTemplate;
-	private String host;
-	private String dbName;
-	private int port;
+	private String host = "localhost";
+	private String dbName = "salesforce";
+	private int port = 27017;
 	
 	@Bean public Mongo mongo() throws UnknownHostException, MongoException{
 		if(null == mongo){
